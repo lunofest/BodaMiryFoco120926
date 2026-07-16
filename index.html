@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Mir y Foco - Nuestra Boda" />
+    <meta property="og:description"
+        content="¡La cuenta regresiva ha comenzado! Descubre los detalles y confirma tu asistencia." />
+
+    <meta property="og:image" content="https://lunofest.github.io/BodaMiryFoco120926/assets/imagenes/miniatura.png" />
+    <meta property="og:url" content="https://lunofest.github.io/BodaMiryFoco120926/" />
+    <meta property="og:type" content="website" />
+
+    <meta property="og:image:type" content="image/png" />
+
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="s-maxage=3600">
+    <meta http-equiv="Cache-Control" content="max-age=3600">
+
+    <script src="cache.js"></script>
+    <script src="main.js"></script>
+
+
+    <link rel="stylesheet" href="css/styles.css?v4">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <title>Nuestra Boda
+    </title>
+</head>
+
+<body>
+
+    <!-- Lightbox de Música -->
+    <div id="music-lightbox" class="music-lightbox">
+        <div class="music-lightbox__modal">
+            <button id="btn-with-music" class="music-lightbox__btn">VER CON MÚSICA</button>
+            <button id="btn-without-music" class="music-lightbox__btn">VER SIN MÚSICA</button>
+        </div>
+    </div>
+
+    <!-- Control de Música Flotante -->
+    <div id="music-control" class="music-control">
+        <button id="music-toggle" class="music-control__btn">
+            <i id="music-icon" class="fas fa-pause"></i>
+        </button>
+    </div>
+
+    <audio id="wedding-music" src="assets/musica.mp3" loop></audio>
+
+    <header class="header">
+        <div class="header__text">
+            <h1 class="header__title">Mir y Foco</h1>
+            <h2 class="header__subtitle">Nos Casamos</h2>
+        </div>
+        <div class="header__arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6" />
+            </svg>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="frase">
+            <h3 class="frase__text">“10 años, 2 hijos... ahora sí nos casamos!!! <br> Seguimos escribiendo esta hermosa
+                historia”</h3>
+        </section>
+
+        <section class="invitacion">
+            <div class="invitacion__content">
+                <p class="invitacion__sup">ESTÁS INVITADO A</p>
+                <h3 class="invitacion__title">Nuestra Boda</h3>
+                <p class="invitacion__text">Nos encantaría que seas parte de este momento tan especial para nosotros.
+                </p>
+            </div>
+        </section>
+
+        <section class="temporizador">
+            <div class="temporizador__header">
+                <p>FALTA</p>
+                <p>POCO PARA</p>
+                <p>EL <span class="temporizador__span">gran</span> DÍA</p>
+            </div>
+            <div class="temporizador__reloj">
+                <div class="temporizador__item">
+                    <span id="days">00</span>
+                    <p>DÍAS</p>
+                </div>
+                <span class="temporizador__separador">:</span>
+                <div class="temporizador__item">
+                    <span id="hours">00</span>
+                    <p>HORAS</p>
+                </div>
+                <span class="temporizador__separador">:</span>
+                <div class="temporizador__item">
+                    <span id="minutes">00</span>
+                    <p>MIN.</p>
+                </div>
+                <span class="temporizador__separador">:</span>
+                <div class="temporizador__item">
+                    <span id="seconds">00</span>
+                    <p>SEG.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="date">
+            <div class="date__content">
+                <p class="date__month">SEPTIEMBRE</p>
+                <h2 class="date__day">12</h2>
+                <p class="date__year">2026</p>
+            </div>
+        </section>
+
+        <section class="lugar">
+            <div class="lugar__container">
+                <div class="lugar__item">
+                    <h3 class="lugar__title">Ceremonia Religiosa</h3>
+                    <p class="lugar__text">Capilla de Nuestra Señora del Rosario de San Nicolás</p>
+                    <p class="lugar__address">Salas y Valdéz 101, Yerba Buena, Tucumán</p>
+                    <p class="lugar__time">a las 16:30hs</p>
+                    <a href="https://maps.app.goo.gl/K1ocVQt6D8Wa7uRs9" target="_blank" class="lugar__btn">VER
+                        UBICACIÓN</a>
+                </div>
+
+                <div class="lugar__item">
+                    <h3 class="lugar__title">Fiesta y Civil</h3>
+                    <p class="lugar__text">Salón Espacio Tafí Eventos</p>
+                    <p class="lugar__address">Ruta 314, KM 5.0, Tafí Viejo, Tucumán</p>
+
+                    <p class="lugar__time">a las 18:30hs</p>
+                    <a href="https://maps.app.goo.gl/L8kr4ajpHNtP7wC16" target="_blank" class="lugar__btn">VER
+                        UBICACIÓN</a>
+                </div>
+            </div>
+        </section>
+
+        <img class="foto" src="assets/imagenes/fotos/sola.webp" alt="">
+
+
+        <section style="display: none;" class="swiper mySwiper" id="fotos" data-aos="fade-up">
+            <h3 class="title title--fotos" data-aos="fade-up">Nuestras Fotos</h3>
+            <h5 class="parrafo parrafo--fotos" data-aos="fade-right">Desliza <br> (ó toca para ampliar)</h5>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="assets/imagenes/fotos/uno.webp" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/imagenes/fotos/uno.webp" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/imagenes/fotos/dos.webp" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/imagenes/fotos/dos.webp" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/imagenes/fotos/tres.webp" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/imagenes/fotos/tres.webp" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/imagenes/fotos/cuatro.webp" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/imagenes/fotos/cuatro.webp" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/imagenes/fotos/cinco.webp" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/imagenes/fotos/cinco.webp" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/imagenes/fotos/seis.webp" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/imagenes/fotos/seis.webp" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/imagenes/fotos/siete.webp" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/imagenes/fotos/siete.webp" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/imagenes/fotos/ocho.webp" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/imagenes/fotos/ocho.webp" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/imagenes/fotos/nueve.webp" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/imagenes/fotos/nueve.webp" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="assets/imagenes/fotos/diez.webp" class="fancybox" data-fancybox="gallery">
+                        <img class="swiper__img" src="assets/imagenes/fotos/diez.webp" alt="">
+                    </a>
+                </div>
+                <!-- Agrega más swiper-slide según sea necesario -->
+            </div>
+        </section>
+
+
+        <section class="itinerarios">
+            <h3 class="itinerario__aviso">Sábado 12 de Septiembre del 2026</h3>
+            <div class="itinerario">
+
+
+                <div class="line">
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+
+
+
+
+                    <article class="itinerario__item item2">
+                        <img class="itinerario__icon icon2" src="assets/imagenes/iconos/iconoIGLESIA.webp" alt="">
+                        <div class="text left">
+                            <h6 class="itinerario__name">CEREMONIA</h6>
+                            <h6 class="itinerario__name itinerario__name2">16:30hs</h6>
+                        </div>
+                    </article>
+
+                    <article class="itinerario__item item3">
+                        <img class="itinerario__icon icon3" src="assets/imagenes/iconos/iconoNOVIOS.webp" alt="">
+                        <div class="text right">
+                            <h6 class="itinerario__name">NUESTRO INGRESO Y CIVIL</h6>
+                            <h6 class="itinerario__name itinerario__name2">18:00hs</h6>
+                        </div>
+                    </article>
+
+                    <article class="itinerario__item item4">
+                        <img class="itinerario__icon icon4" src="assets/imagenes/iconos/iconoCENA.webp" alt="">
+                        <div class="text left">
+                            <h6 class="itinerario__name">Cena</h6>
+                            <h6 class="itinerario__name itinerario__name2">21:00hs</h6>
+                        </div>
+                    </article>
+
+                    <article class="itinerario__item item5">
+                        <img class="itinerario__icon icon5" src="assets/imagenes/iconos/iconoINICIOfiesta.webp" alt="">
+                        <div class="text right">
+                            <h6 class="itinerario__name">Inicio del baile</h6>
+                            <h6 class="itinerario__name itinerario__name2">22:30hs</h6>
+                        </div>
+                    </article>
+                    <article class="itinerario__item item6">
+                        <img class="itinerario__icon icon6" src="assets/imagenes/iconos/iconoFIN.webp" alt="">
+                        <div class="text left">
+                            <h6 class="itinerario__name">Cierre de la Fiesta</h6>
+                            <h6 class="itinerario__name itinerario__name2">02:00hs</h6>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="dresscode">
+            <div class="dresscode__container">
+                <div class="dresscode__icon">
+                    <img src="assets/vectores/dresscode.svg" alt="Dress Code Icon">
+                </div>
+                <div class="dresscode__line"></div>
+                <div class="dresscodeinfo">
+                    <h3 class="dresscode__title">DRESS CODE</h3>
+                    <p class="dresscode__type">GALA</p>
+                    <p class="dresscode__desc">¡Luce tu mejor look!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="regalos">
+            <div class="regalos__container">
+                <h3 class="regalos__title">Regalos</h3>
+                <p class="regalos__text">Lo más importante es tu presencia, pero si deseas hacernos un regalo aquí
+                    tienes nuestros datos</p>
+                <button id="btn-regalos" class="regalos__btn-main">VER DATOS BANCARIOS</button>
+
+                <div id="regalos-info" class="regalos__info">
+                    <div class="regalos__item">
+                        <p>CBU: <span id="cbu-text">0440037040000162796100</span></p>
+                        <button class="regalos__copy-btn" data-copy="0440037040000162796100">COPIAR CBU</button>
+                    </div>
+                    <div class="regalos__item">
+                        <p>ALIAS: <span id="alias-text">MUSA.SALTA.MANO</span></p>
+                        <button class="regalos__copy-btn" data-copy="MUSA.SALTA.MANO">COPIAR ALIAS</button>
+                    </div>
+                    <div class="regalos__titular">
+                        <p>Titular: Diego Alejandro Comolli - Banco Hipotecario</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="playlist" id="playlist">
+            <div class="playlist__container">
+                <h3 class="playlist__title">Playlist</h3>
+                <p class="playlist__text">Recomiéndanos un tema que no puede faltar en Nuestra Boda</p>
+                <form id="form-playlist" class="playlist__form">
+                    <input type="text" id="play-name" placeholder="Tu nombre" required>
+                    <input type="text" id="play-song" placeholder="Tema musical" required>
+                    <button type="submit" class="playlist__btn">RECOMENDAR TEMA</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="bebes">
+            <h4 class="bebes__title">Sólo Adultos</h4>
+            <p class="bebes__parrafo">Queremos que esta celebración sea una noche especial para compartir, disfrutar y
+                crear recuerdos inolvidables. Por ello, hemos decidido que el evento sea exclusivamente para adultos.
+                Agradecemos de corazón su comprensión y esperamos contar con su presencia.</p>
+        </section>
+
+
+        <section class="confirmacion">
+            <div class="confirmacion__container">
+                <h3 class="confirmacion__title">Confirmación de asistencia</h3>
+                <h4 class="confirmacion__text">
+                    Recordá que tenés hasta el día 12 de Agosto del 2026 para confirmar tu presencia
+                </h4>
+                <div id="asistencia">
+                    <div class="asistencia__radios">
+                        <label class="asistencia__radio">
+                            <input class="assistencia__label" type="radio" name="attendanceOption" value="SI ASISTIRÉ">
+                            SI ASISTIRÉ
+                        </label>
+                        <label class="asistencia__radio">
+                            <input class="assistencia__label" type="radio" name="attendanceOption" value="NO ASISTIRÉ">
+                            NO ASISTIRÉ
+                        </label>
+                    </div>
+                    <br>
+                    <div class="asistencia__datos">
+                        <label class="asistencia__label" for="userFullName">Nombre y Apellido:</label>
+                        <input class="input__text" type="text" id="userFullName" placeholder="Tu nombre y apellido"
+                            required>
+                        <br>
+                        <div class="alimenticio">
+                            <h5 class="parrafo alimenticio__title">Si tenés una alimentación especial, te solicitamos
+                                que indiques cual de las siguientes es:</h5>
+                            <div class="alimenticio__container">
+                                <div class="contenedor__alimenticio">
+                                    <input class="alimenticio__radios" type="radio" id="celiaca"
+                                        name="alimenticioOption">
+                                    <label class="alimenticio__label" for="celiaca">Celíac@</label>
+                                </div>
+                                <div class="contenedor__alimenticio">
+                                    <input class="alimenticio__radios" type="radio" id="vegetariana"
+                                        name="alimenticioOption">
+                                    <label class="alimenticio__label" for="vegetariana">Vegetarian@</label>
+                                </div>
+                                <div class="contenedor__alimenticio">
+                                    <input class="alimenticio__radios" type="radio" id="hipertesion"
+                                        name="alimenticioOption">
+                                    <label class="alimenticio__label" for="hipertesion">Hipertesión</label>
+                                </div>
+                                <div class="contenedor__alimenticio">
+                                    <input class="alimenticio__radios" type="radio" id="diabetica"
+                                        name="alimenticioOption">
+                                    <label class="alimenticio__label" for="diabetica">Diabétic@</label>
+                                </div>
+                                <div class="contenedor__alimenticio">
+                                    <input class="alimenticio__radios" type="radio" id="ninguna"
+                                        name="alimenticioOption">
+                                    <label class="alimenticio__label" for="ninguna">Ninguna</label>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="asistencia__label asistencia__label2" for="customMessage">Mensaje opcional</label>
+                        <textarea class="input__text input__text2" id="customMessage"
+                            placeholder="Mensaje opcional"></textarea>
+                        <br>
+                        <button class="boton__cta boton__cta3" id="btnConfirmacion1">
+                            <svg class="whatsapp__icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.438h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                            </svg>
+                            Confirmar a Diego
+                        </button>
+                        <button class="boton__cta boton__cta3" id="btnConfirmacion2">
+                            <svg class="whatsapp__icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.438h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                            </svg>
+                            Confirmar a Mirta
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fraseFinal">
+            <h3 class="fraseFinal__text">"Queremos que nos acompañes en este día tan especial para nosotros! <br>
+                Gracias por
+                formar parte de nuestras vidas."</h3>
+        </section>
+
+
+
+    </main>
+
+
+    <footer class="footer__final1">
+        <div class="footer__inner1">
+            <div class="footer__brand1">
+                <p class="footer__text1">
+                    Página creada por <strong>Laura Dominguez</strong>
+                    para la Boda de <strong>Mir y Foco </strong>.<br>
+                    Todos los derechos reservados.
+                </p>
+
+            </div>
+
+
+
+            <!-- <div class="footer__social3">
+                <p class="footer__follow1">Síguenos en nuestras redes</p>
+                <a class="icon-link1"
+                    href="https://www.instagram.com/lunodigitales?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    aria-label="Instagram de Luno Digitales">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"
+                            fill="none" />
+                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" fill="none" />
+                        <circle cx="18.2" cy="5.8" r="0.7" fill="currentColor" />
+                    </svg>
+                </a>
+                <a class="icon-link1" href="https://www.facebook.com/profile.php?id=61581720891655" target="_blank"
+                    rel="noopener" aria-label="Facebook de Luno Digitales">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div> -->
+
+        </div>
+    </footer>
+
+    <style>
+        /* ///////////////// footer /////////////////////// */
+
+
+        .footer__final1 {
+            background: linear-gradient(180deg, #d2c083 0%, #f5efc6 100%);
+            color: #414141;
+            padding: 1.5em 0;
+
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            font-size: 14px;
+            width: clamp(100px, 100%, 1800px);
+            text-align: center;
+            margin: 0 auto 0;
+        }
+
+        .footer__inner1 {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            align-items: center;
+            text-align: center;
+            padding: 0 1em;
+        }
+
+        .footer__text1 {
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .footer__text1 strong {
+            color: #0b0b0b;
+            font-weight: 700;
+        }
+
+        .footer__site1 {
+            display: inline-block;
+            margin-top: 8px;
+            text-decoration: none;
+            color: #414141;
+            font-weight: 600;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .footer__site1:hover {
+            text-decoration: underline;
+        }
+
+        .footer__social3 {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 5px;
+        }
+
+        .footer__follow1 {
+            margin: 0;
+            font-size: 14px;
+            color: #414141;
+            font-weight: 500;
+        }
+
+        .footer__final1 .icon-link1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #414141;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .footer__final1 .icon-link1 svg {
+            width: 28px !important;
+            height: 28px !important;
+            display: block;
+            margin: 0;
+        }
+
+        .footer__final1 .icon-link1:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="js/script.js?v4"></script>
+
+</body>
+
+</html>
